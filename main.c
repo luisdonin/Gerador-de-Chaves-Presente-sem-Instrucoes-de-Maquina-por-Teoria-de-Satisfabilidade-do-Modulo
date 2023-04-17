@@ -3,59 +3,33 @@
 
 
 
-
-
-int registerAcc(int *data) {
-    int password;
-    printf("Register Password: ");
-    scanf("%d", &password);
-    *data = password;
-    printf("Password registered successfully.\n");
-    return password;
-}
-
-
-
-
-
-int login(int *data, int *password) {
-    printf("Enter password: ");
-    scanf("%d", &password);
-    if (*password != *data) {
-        printf("incorrect password, try again\n");
-	return main();
-    }else
-    return password;
-}
-
-
-
 int main() {
-    int option = 0, password = 0, data = 0;
 
-    while (1) {
-        printf("1- Login | 2- Register password\n");
-        scanf("%d", &option);
-        switch (option) {
-            case 1: {
-                password = login(&data, password);
-                break;
-            }
-            case 2: {
-                password = registerAcc(&data);
-                return main();
-                break;
-            }
-            default: {
-                printf("Invalid option, please try again.\n");
-                continue;
-            }
+        int valCode[5];
+
+        int sum;
+        int i;
+        printf("Validation code: ");
+        for( i=0; i<5;i++){
+            scanf("%d", &valCode[i]);
         }
-        printf("Welcome!\n");
-       
-        printf("Your password is: %d\n", password);
-        break;
-    }
 
-    return 0;
+        sum = valCode[0] + valCode[1] + valCode[2] + valCode[3] + valCode[4] ;
+            
+
+        if(sum %2 == 0){
+            printf("\nWelcome!");
+        }
+        else{
+            printf("\nInvalid Key!");
+            printf("\nsum: %d\n", sum);
+        }
+
+        printf("Validation: ");
+        for( i=0; i<5;i++){
+            printf(" %d", valCode[i]);
+        }
+        printf("\n");
+
+        return 0;
 }

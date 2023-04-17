@@ -1,2 +1,2 @@
-gcc -o main main.c &&  ./main
+clear && gcc -o main main.c &&  ./main
 
