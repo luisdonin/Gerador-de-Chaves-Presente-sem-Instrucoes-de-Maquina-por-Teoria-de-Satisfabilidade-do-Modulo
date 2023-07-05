@@ -1,70 +1,25 @@
-Overview
-
-This Python script is designed to generate a key for the login() function in a specific C program that is provided.
-It uses the z3-solver library to generate a key that is different from the data value passed to the function.
-
-To run this script, you need to have the z3-solver library installed. You can install it using pip:
-
-    pip install z3-solver
 
 
-How to use:
+# SMT Key Generator
 
+## Overview
+This project aims to investigate the application of Satisfiability Modulo Theories (SMT) to the problem of automatic key generation for access systems. The goal is to develop a system that performs reverse engineering automatically.
 
-    Run the Python script.
+A key is a set of information that determines the functional output of an algorithm. Keys are typically used in different computational contexts as a form of authentication for access to resources. The access system, including its algorithm, is typically known. However, the key is kept secret by those who have access to the resource in order to validate their authentication.
 
-    If a solution is found, the script will print a 5 digit key to the console.
+## Objectives
+The general objective of this research project is to investigate SMT in the problem of automatic key generation, with the goal of developing a system that performs this reverse engineering operation automatically.
 
-    Copy the key and use it in the program to validate the user.
-    
-    
-    
-Script Details
+Specific goals of the project include:
+- Studying SMT theory and its applications
+- Creating access functions that simulate real systems for testing and performance evaluation
+- Programming a computational model for SMT that can be applied to these test functions
+- Studying the application of SMT and its efficiency in the problem of automatic key generation
+- Conducting a literature review on the state of the art in SMT applications and software reverse engineering
 
-The script begins by importing the z3-solver library:
+## Methods and Procedures
+The project will be developed following the timeline of specific objectives to ensure its smooth progress. Test functions will be developed in C, C++, and Java languages.
 
-    from z3 import *
-
-It then defines  the digits using the BitVec class with 4 bytes:
-
-
-    digitn = BitVec('digitn', 4) 
-    # n is the index of the digit (digit1, digit2...)
-    
-
-These variables are represented as 4-bit bitvectors, which means that they can take on any value within the range of a 4bit integer.
-
-The script creates a solver instance using the Solver() constructor:
-
-    solver = Solver()
-
-It then adds the constraints to the solver using the add() method:
-
-    solver.add(((digitn)+(digitn+1)) %2 != 0 )
-    # The sum of the digits must be odd
-    # n being a generic index for the digit
-
-
-    solver.add((digitn) != 1)
-    solver.add((digitn) != 0)
-    #the digits must be different from 1 and 0
-
-The script checks if the solver can find a solution using the check() method:
-
-    if solver.check() == sat:
-
-If the solver returns a value of sat (satisfiable), it means that it has found a solution that satisfies the constraints. 
-The script extracts the values of the digit variables from the solver's model using the model() method:
-    
-    digit_n = model[digitn].as_long()
-
-It then prints the value of the password variable as the key:
-    
-    print(f"Key: {digit_1} {digit_2} {digit_3} {digit_4} {digit_5}")
-
-If the solver returns a value of unsat (unsatisfiable), it means that it cannot find a solution that satisfies the constraints. The script prints an error message:
-
-    else:
-       print("Couldn't find a solution!.")
-
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
 
