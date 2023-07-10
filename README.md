@@ -17,9 +17,4 @@ Specific goals of the project include:
 - Studying the application of SMT and its efficiency in the problem of automatic key generation
 - Conducting a literature review on the state of the art in SMT applications and software reverse engineering
 
-## Methods and Procedures
-The project will be developed following the timeline of specific objectives to ensure its smooth progress. Test functions will be developed in C, C++, and Java languages.
-
-## Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
 
