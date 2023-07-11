@@ -1,6 +1,6 @@
 
 
-# SMT Key Generator
+# SMT Automatic Key Generator
 
 ## Overview
 This project aims to investigate the application of Satisfiability Modulo Theories (SMT) to the problem of automatic key generation for access systems. The goal is to develop a system that performs reverse engineering automatically.
@@ -17,4 +17,8 @@ Specific goals of the project include:
 - Studying the application of SMT and its efficiency in the problem of automatic key generation
 - Conducting a literature review on the state of the art in SMT applications and software reverse engineering
 
+
+## Binary Analysis and Reverse Engineering Framework
+[BARF Project](https://github.com/programa-stic/barf-project#barf--binary-analysis-and-reverse-engineering-framework).
+This project utilizes BARF to assist in the automatic binary analysis making use of its implementation of [Z3 solver](https://github.com/Z3Prover/z3) and of [Openreil](https://github.com/Cr4sh/openreil).
 
