@@ -23,7 +23,6 @@ This project utilizes [BARF Project](https://github.com/programa-stic/barf-proje
 
 ## Key Generator in Python
 ![Python Script running before analyzing the C program](images/Keygen1.png)
-
 ![Python Script running after analyzing the C program](images/keygen2.png)
 
 ## Validation program in C
