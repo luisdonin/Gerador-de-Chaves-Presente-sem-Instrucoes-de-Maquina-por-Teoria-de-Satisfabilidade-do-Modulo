@@ -23,4 +23,4 @@ This project utilizes [BARF Project](https://github.com/programa-stic/barf-proje
 
 ## SMT Automatic Key Generator by Binary Analysis 
 ![Before validation](images/loaded.png)
-![After Validation](images/resultado.jpeg)
+![After Validation](images/resultado.png)
