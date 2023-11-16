@@ -21,11 +21,6 @@ Specific goals of the project include:
 ## Binary Analysis and Reverse Engineering Framework
 This project utilizes [BARF Project](https://github.com/programa-stic/barf-project#barf--binary-analysis-and-reverse-engineering-framework) to assist in the automatic binary analysis making use of its implementation of [Z3 solver](https://github.com/Z3Prover/z3) and of [Openreil](https://github.com/Cr4sh/openreil).
 
-## Key Generator in Python
-![Python Script running before analyzing the C program](images/Keygen1.png)
-![Python Script running after analyzing the C program](images/keygen2.png)
-
-## Validation program in C
-
-![C program](images/c.png)
-![C program validated](images/validated.png)
+## SMT Automatic Key Generator by Binary Analysis 
+![Before validation](images/loaded.png)
+![After Validation](images/result.png)
