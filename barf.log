@@ -1,33 +1,33 @@
-2023-11-16 16:53:21,548: barf.barf:INFO: Initializing BARF
-2023-11-16 16:53:21,553: barf.core.smt.smtsolver:DEBUG: > (set-option :global-decls false)
-2023-11-16 16:53:21,553: barf.core.smt.smtsolver:DEBUG: > (set-logic QF_AUFBV)
-2023-11-16 16:53:21,553: barf.core.smt.smtsolver:DEBUG: > (declare-fun MEM_0 () (Array (_ BitVec 64) (_ BitVec 8)))
-2023-11-16 16:53:21,553: barf.arch.emulator:INFO: Loading ELF image into memory
-2023-11-16 16:53:21,554: barf.arch.emulator:INFO: Loading segment #0 (0x40-0x318)
-2023-11-16 16:53:21,555: barf.arch.emulator:INFO: Loading segment #1 (0x318-0x334)
-2023-11-16 16:53:21,555: barf.arch.emulator:INFO: Loading segment #2 (0x0-0xcd8)
-2023-11-16 16:53:21,557: barf.arch.emulator:INFO: Loading segment #3 (0x1000-0x18c9)
-2023-11-16 16:53:21,560: barf.arch.emulator:INFO: Loading segment #4 (0x2000-0x21c4)
-2023-11-16 16:53:21,560: barf.arch.emulator:INFO: Loading segment #5 (0x3cd8-0x4010)
-2023-11-16 16:53:21,561: barf.arch.emulator:INFO: Loading segment #6 (0x3ce8-0x3ef8)
-2023-11-16 16:53:21,562: barf.arch.emulator:INFO: Loading segment #7 (0x338-0x368)
-2023-11-16 16:53:21,562: barf.arch.emulator:INFO: Loading segment #8 (0x368-0x3ac)
-2023-11-16 16:53:21,562: barf.arch.emulator:INFO: Loading segment #9 (0x338-0x368)
-2023-11-16 16:53:21,562: barf.arch.emulator:INFO: Loading segment #10 (0x2060-0x20ac)
-2023-11-16 16:53:21,562: barf.arch.emulator:INFO: Loading segment #11 (0x0-0x0)
-2023-11-16 16:53:21,562: barf.arch.emulator:INFO: Loading segment #12 (0x3cd8-0x4000)
-2023-11-16 16:53:21,740: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,408: barf.barf:INFO: Initializing BARF
+2023-11-16 17:21:27,415: barf.core.smt.smtsolver:DEBUG: > (set-option :global-decls false)
+2023-11-16 17:21:27,416: barf.core.smt.smtsolver:DEBUG: > (set-logic QF_AUFBV)
+2023-11-16 17:21:27,416: barf.core.smt.smtsolver:DEBUG: > (declare-fun MEM_0 () (Array (_ BitVec 64) (_ BitVec 8)))
+2023-11-16 17:21:27,416: barf.arch.emulator:INFO: Loading ELF image into memory
+2023-11-16 17:21:27,417: barf.arch.emulator:INFO: Loading segment #0 (0x40-0x318)
+2023-11-16 17:21:27,418: barf.arch.emulator:INFO: Loading segment #1 (0x318-0x334)
+2023-11-16 17:21:27,418: barf.arch.emulator:INFO: Loading segment #2 (0x0-0xcd8)
+2023-11-16 17:21:27,420: barf.arch.emulator:INFO: Loading segment #3 (0x1000-0x18c9)
+2023-11-16 17:21:27,422: barf.arch.emulator:INFO: Loading segment #4 (0x2000-0x21c4)
+2023-11-16 17:21:27,422: barf.arch.emulator:INFO: Loading segment #5 (0x3cd8-0x4010)
+2023-11-16 17:21:27,424: barf.arch.emulator:INFO: Loading segment #6 (0x3ce8-0x3ef8)
+2023-11-16 17:21:27,424: barf.arch.emulator:INFO: Loading segment #7 (0x338-0x368)
+2023-11-16 17:21:27,424: barf.arch.emulator:INFO: Loading segment #8 (0x368-0x3ac)
+2023-11-16 17:21:27,425: barf.arch.emulator:INFO: Loading segment #9 (0x338-0x368)
+2023-11-16 17:21:27,425: barf.arch.emulator:INFO: Loading segment #10 (0x2060-0x20ac)
+2023-11-16 17:21:27,425: barf.arch.emulator:INFO: Loading segment #11 (0x0-0x0)
+2023-11-16 17:21:27,425: barf.arch.emulator:INFO: Loading segment #12 (0x3cd8-0x4000)
+2023-11-16 17:21:27,615: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,744: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,618: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,745: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,619: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,745: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,619: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,748: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,622: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,752: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,626: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,754: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
+2023-11-16 17:21:27,628: barf.arch.translator:WARNING: Instruction not supported: endbr64 (endbr64 [b'f30f1efa'])
 NoneType: None
-2023-11-16 16:53:21,761: barf.core.smt.smtsolver:DEBUG: > (declare-fun rax_0 () (_ BitVec 64))
+2023-11-16 17:21:27,635: barf.core.smt.smtsolver:DEBUG: > (declare-fun rax_0 () (_ BitVec 64))

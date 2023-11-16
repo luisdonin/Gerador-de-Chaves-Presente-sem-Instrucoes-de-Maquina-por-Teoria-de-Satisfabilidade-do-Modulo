@@ -44,7 +44,7 @@ def analyze_file(filepath):
 
     solver = Solver()
 
-    solver.add(eax_z3 == 0x1)
+    solver.add(And(eax_z3 >= 10000, eax_z3 <= 99999))
 
     if solver.check() == sat:
         model = solver.model()
