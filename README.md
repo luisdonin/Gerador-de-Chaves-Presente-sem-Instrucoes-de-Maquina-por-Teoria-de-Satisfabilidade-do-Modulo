@@ -29,3 +29,4 @@ This project utilizes [BARF Project](https://github.com/programa-stic/barf-proje
 ## Validation program in C
 
 ![C program](images/c.png)
+![C program validated](images/validated.png)
