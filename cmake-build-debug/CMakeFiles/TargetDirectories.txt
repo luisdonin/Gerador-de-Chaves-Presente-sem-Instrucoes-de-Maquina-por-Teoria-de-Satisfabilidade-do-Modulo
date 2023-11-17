@@ -1,3 +1,0 @@
-/home/donin/Documents/GitHub/donin-s-keygen/cmake-build-debug/CMakeFiles/donin_s_keygen.dir
-/home/donin/Documents/GitHub/donin-s-keygen/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/donin/Documents/GitHub/donin-s-keygen/cmake-build-debug/CMakeFiles/rebuild_cache.dir
