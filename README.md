@@ -41,7 +41,7 @@ In this case the restrictions are found automatically by the code analyzer prese
 None of the restrictions were manually added.
 
 ## Manual_solver.py
-This script is the earlier version of the one mentioned above, it doesn't BARF nor OPENREIL, here, the restrictions are added manually to the solver, which then finds a solution.
+This script is the earlier version of the one mentioned above, it doesn't use BARF nor OPENREIL, here, the restrictions are added manually to the solver, which then finds a solution.
 It is tailor made for the compiled program "main" and won't work for any other executable unless the restrictions are manually added.
 
 ## SMT Automatic Key Generator by Binary Analysis 
