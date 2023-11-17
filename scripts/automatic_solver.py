@@ -47,9 +47,9 @@ def analyze_file(filepath):
     solver.add(And(eax_z3 >= 10000, eax_z3 <= 99999))
 
     if solver.check() == sat:
-        model = solver.model()
+        modelo = solver.model()
 
-        eax_val = model[eax_z3].as_long()
+        eax_val = modelo[eax_z3].as_long()
 
         analyzed_file_box.insert(tk.END, f"Chave: {eax_val}\n")
     else:
