@@ -32,20 +32,20 @@ int main(int argc, char *argv[]) {
     gtk_init(&argc, &argv);
 
     GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(window), "Validador de senha");
-    gtk_window_set_default_size(GTK_WINDOW(window), 300, 200);
+    gtk_window_set_title(GTK_WINDOW(window), "Main");
+    gtk_window_set_default_size(GTK_WINDOW(window), 800, 600);
     GtkWidget *box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     gtk_container_add(GTK_CONTAINER(window), box);
 
     GtkEntry *entry = GTK_ENTRY(gtk_entry_new());
     gtk_box_pack_start(GTK_BOX(box), GTK_WIDGET(entry), TRUE, TRUE, 0);
 
-    GtkWidget *button = gtk_button_new_with_label("Validar senha");
+    GtkWidget *button = gtk_button_new_with_label("Digite a senha");
     g_signal_connect(button, "clicked", G_CALLBACK(on_button_clicked), entry);
     gtk_box_pack_start(GTK_BOX(box), button, TRUE, TRUE, 0);
 
     GtkWidget *widgets[2] = {GTK_WIDGET(entry), button};
-    GtkWidget *reset_button = gtk_button_new_with_label("Nova senha");
+    GtkWidget *reset_button = gtk_button_new_with_label("Testar outra senha");
     g_signal_connect(reset_button, "clicked", G_CALLBACK(on_reset_clicked), widgets);
     gtk_box_pack_start(GTK_BOX(box), reset_button, TRUE, TRUE, 0);
 
