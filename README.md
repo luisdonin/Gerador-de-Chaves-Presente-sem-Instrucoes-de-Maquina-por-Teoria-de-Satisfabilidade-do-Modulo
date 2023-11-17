@@ -18,7 +18,7 @@ Specific goals of the project include:
 - Conducting a literature review on the state of the art in SMT applications and software reverse engineering
 
 
-## Binary Analysis and Reverse Engineering Framework
+# Binary Analysis and Reverse Engineering Framework
 This project utilizes [BARF Project](https://github.com/programa-stic/barf-project#barf--binary-analysis-and-reverse-engineering-framework) to assist in the automatic binary analysis making use of its implementation of [Z3 solver](https://github.com/Z3Prover/z3) and of [Openreil](https://github.com/Cr4sh/openreil).
 
 
@@ -28,8 +28,8 @@ First install gtk dependencies, then use the script make.sh to compile and execu
 The program will ask you to input a password and check if it's valid.
 The second button resets the program for you to test another possible password and it's validity.
 
-## Automatic_solver.py
-# BARF, Z3-SOLVER, OPENREIL
+# Automatic_solver.py
+## BARF, Z3-SOLVER, OPENREIL
 Automatic solver is a python script that uses TKinter for the GUI, when executing it, a window will be rendered
 It will ask you to select an ELF or PE32 file.
 After the file is loaded onto the BARF module, the instructions will be translated to OPENREIL instructions, the program will be disassembled and the instructions will be displayed in the text box in the program.
