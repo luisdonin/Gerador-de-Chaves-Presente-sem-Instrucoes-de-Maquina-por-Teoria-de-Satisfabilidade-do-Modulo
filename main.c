@@ -3,7 +3,7 @@
 
 int valida(int valCode[5]) {
     int sum = valCode[0] + valCode[1] + valCode[2] + valCode[3] + valCode[4];
-    return sum % 2 == 0;
+    return sum % 3 == 0;
 }
 
 void on_button_clicked(GtkWidget *button, gpointer user_data) {
