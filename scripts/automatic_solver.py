@@ -43,23 +43,28 @@ def analyze_file(filepath):
     #analyzed_file_box.insert(tk.END, eax)
     #print(eax)
 
-    eax_z3 = BitVec("eax", 64)
+    registers = {reg: BitVec(reg, 32) for reg in ['eax', 'ebx', 'ecx', 'edx']}
     #text_box.insert(tk.END, f"eax: {eax}\n")
-    #print(eax_z3)
+    #print(registers)
 
     solver = Solver()
+    stack = [BitVec(f'stack_{i}', 32) for i in range(10)]  # Model the stack as a list of BitVecs
 
-    solver.add(And(eax_z3 >= 10000, eax_z3 <= 99999))
+    for i in range(10):
+        solver.add(stack[i] >= 0, stack[i] < 256)
+    #solver.add(registers['eax'] == stack[0]+1)
 
     if solver.check() == sat:
         modelo = solver.model()
-
-        eax_val = modelo[eax_z3].as_long()
-
-        analyzed_file_box.insert(tk.END, f"Chave: {eax_val}\n")
+        if registers["eax"] in modelo:
+            eax_val = modelo[registers["eax"]].as_long()
+            analyzed_file_box.insert(tk.END, f"Chave: {eax_val}\n")
+            solver.add(registers['eax'] != eax_val)
+        else:
+            analyzed_file_box.insert(tk.END, "eax não esta no modelo.\n")
     else:
         analyzed_file_box.insert(tk.END, "Solução não encontrada!\n")
-
+        
 def load_file():
     
     filepath = filedialog.askopenfilename()
