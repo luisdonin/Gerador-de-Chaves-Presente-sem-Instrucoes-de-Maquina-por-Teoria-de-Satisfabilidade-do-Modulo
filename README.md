@@ -13,7 +13,8 @@ automating key generation through the analysis of instructions translated into R
 Research is ongoing and current challenges include compatibility issues with newer
 versions of Python, necessitating technological adaptation to updated versions.
 #### KEYWORDS: automatic analysis; assembly; keygen.
-
+#### Presented remotely at SEI-SICITE 2023 - Ponta Grossa, Paraná, Brazil.
+[Full Text](https://seisicite.com.br/storage/seisicite-trabalhos-finais/1132-4d557ffafdac356241b527535c5f603961c8b799c2cd472320995826e184e432.pdf)
 ## Overview
 This project aims to investigate the application of Satisfiability Modulo Theories (SMT) to the problem of automatic key generation for access systems. The goal is to develop a system that performs reverse engineering automatically.
 
