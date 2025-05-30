@@ -1,6 +1,18 @@
+# Gerador de Chaves Presentes em Instruções de Máquina por Teoria de Satisfabilidade do Módulo 
 
-
-# SMT Automatic Key Generator
+### ABSTRACT
+This project uses Satisfiability Modulo Theories (SMT) to automatically generate access
+keys through binary file analysis. The Binary Analysis and Reverse Engineering
+Framework (BARF) was used to translate machine instructions from the Intel x86 platform
+into a platform-independent intermediate language, Reverse Engineering Intermediate
+Language (REIL). The translated instructions are analyzed by the Z3-solver to determine
+the satisfiability of constraints. If satisfactory, it prints possible assignments for the
+variables ‘a’, ‘b’, and ‘c’. Preliminary results indicate the possibility of generating a
+validation key by manually adding constraints to the Z3-solver. Future work focuses on
+automating key generation through the analysis of instructions translated into REIL.
+Research is ongoing and current challenges include compatibility issues with newer
+versions of Python, necessitating technological adaptation to updated versions.
+#### KEYWORDS: automatic analysis; assembly; keygen.
 
 ## Overview
 This project aims to investigate the application of Satisfiability Modulo Theories (SMT) to the problem of automatic key generation for access systems. The goal is to develop a system that performs reverse engineering automatically.
